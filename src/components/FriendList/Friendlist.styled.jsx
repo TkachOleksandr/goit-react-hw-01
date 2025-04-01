@@ -20,9 +20,10 @@ export const Item = styled.li`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
-export const Status = styled.span`
-  
-  color: ${props => (props.statusType ? 'green' : 'red')};
+export const Status = styled.p`
+  font-size: 14px;
+  font-weight: bold;
+  color: ${({ isOnline }) => (isOnline ? "green" : "red")};
 `;
 
 export const Avatar = styled.img`
